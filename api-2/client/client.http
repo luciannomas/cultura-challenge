@@ -1,0 +1,62 @@
+@api = http://localhost:3000
+
+
+###
+POST http://localhost:3000/api/v1/permissions
+Content-type: application/json
+
+{
+    "name": "update"
+}
+
+
+###
+GET http://localhost:3002/users
+
+
+###
+GET http://localhost:3002/users/5
+
+
+###
+GET http://localhost:3002/users/5/todos
+
+###
+GET http://localhost:3000/api/v1/permissions?name=crea
+
+
+###  
+PUT http://localhost:3000/api/v1/permissions
+Content-type: application/json
+
+{
+    "originalName": "READ",
+    "newName": "READ1 "
+}
+
+
+###
+DELETE  http://localhost:3000/api/v1/permissions/DELETE 
+Content-type: application/json
+
+
+###
+POST http://localhost:3000/api/v1/roles
+Content-type: application/json
+
+{
+    "name": "admin",
+    "permissions": [
+        {
+            "name": "UPDATE"
+        },
+        {
+            "name": "CREATE2"
+        }
+    ]
+}
+
+
+
+###
+GET http://localhost:3000/api/v1/roles

@@ -1,0 +1,9 @@
+@api = http://localhost:3000
+
+GET http://localhost:3001/76178703-96e0-4ade-9ed3-84d01981ff16/users
+
+###
+GET http://localhost:3001/76178703-96e0-4ade-9ed3-84d01981ff16/users/5
+
+###
+GET http://localhost:3001/users/5/todos
